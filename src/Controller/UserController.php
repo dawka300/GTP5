@@ -6,10 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ArticlesController extends AbstractController
+class UserController extends AbstractController
 {
-    #[Route(path: '/articles', name: 'articles', methods: ['GET'])]
-    public function list(): Response
+    #[Route(path: '/user/{id}', name: 'user', defaults: ['user' => null], methods: ['GET', 'HEAD'])]
+    public function profile($id): Response
     {
         return $this->render('base.html.twig');
     }
