@@ -14,3 +14,4 @@ class UserController extends AbstractController
         return $this->render('base.html.twig');
     }
 }
+
