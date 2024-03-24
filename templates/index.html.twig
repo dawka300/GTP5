@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+  {% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+  {% endblock %}
+
+  {% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+  {% endblock %}
+
+
+{% block body %}
+  <header class="header d-flex flex-column justify-content-center align-items-center vh-100 text-center position-relative">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="text-container position-relative  h-100">
+          <h1 class="display-1 fw-bold text-white mb-3">Unlock the Power of AI</h1>
+          <p class="lead mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum iste itaque natus sunt blanditiis autem beatae maxime, sint eveniet!</p>
+          <a href="#" class="btn btn-primary btn-lg">Get Access</a>
+        </div>
+      </div>
+    </div>
+    
+    
+  
+  </header>
+  
+{% endblock %}
+
+

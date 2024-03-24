@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg bg-none fixed-top py-2" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="{{ path('homepage') }}">Homepage</a>
+    <button 
+      class="navbar-toggler text-uppercase font-weight-bold bg-light" type="button" 
+      data-bs-toggle="collapse" data-bs-target="#navbarDropdownMenu" aria-controls="navbarResponsive" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarDropdownMenu">
+      <ul class="navbar-nav ms-auto d-flex align-items-center">
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3" href="{{ path('homepage') }}">Home</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ path('about') }}">Docs</a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ path('contact') }}">
+          Contact us</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a href="#" class="btn btn-primary">Sign In</a>
+        </li>
+      </ul>
+      <span class="nav-item">
+          <span class="fa-stack">
+            <a href="https://github.com/dawka300/GTP5" target="_blank">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-github fa-stack-1x text-white"></i>
+            </a>
+          </span>
+        </span>
+    </div>
+  </div>
+</nav>
